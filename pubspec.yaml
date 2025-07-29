@@ -1,0 +1,63 @@
+name: ito_bound
+
+description: >-
+  ItoBound is a modern, visually stunning dating app for finding real connections. Swipe, match, and chat with a beautiful, intuitive interface inspired by the best in the industry.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+homepage: https://itobound.com
+privacy_policy_url: https://itobound.com/privacy
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.0.0
+  firebase_core: ^3.15.1
+  firebase_auth: ^5.6.2
+  cloud_firestore: ^5.6.11
+  firebase_analytics: ^11.5.2
+  firebase_performance: ^0.10.1+9
+  firebase_messaging: ^15.2.9
+  google_sign_in: ^7.1.1
+  image_picker: ^1.1.2
+  firebase_storage: ^12.4.9
+  google_fonts: ^6.1.0
+  lottie: ^2.7.0
+  shared_preferences: ^2.2.2
+  # Add any other dependencies you used yesterday
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # assets:
+  #   # - assets/images/
+  #   # - assets/icons/
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+
+flutter_native_splash:
+  color: "#FF6F61"
+  image: "assets/icon/app_icon.png"
+  android: true
+  ios: true
+  web: true
