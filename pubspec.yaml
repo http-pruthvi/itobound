@@ -16,48 +16,81 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  flutter_riverpod: ^2.0.0
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Firebase
   firebase_core: ^3.15.1
   firebase_auth: ^5.6.2
   cloud_firestore: ^5.6.11
+  firebase_storage: ^12.4.9
+  firebase_messaging: ^15.2.9
   firebase_analytics: ^11.5.2
   firebase_performance: ^0.10.1+9
-  firebase_messaging: ^15.2.9
+  
+  # Authentication
   google_sign_in: ^7.1.1
-  image_picker: ^1.1.2
-  firebase_storage: ^12.4.9
+  sign_in_with_apple: ^6.1.1
+  
+  # UI & Animations
   google_fonts: ^6.1.0
-  lottie: ^2.7.0
+  flutter_animate: ^4.5.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+  
+  # Media & Camera
+  image_picker: ^1.1.2
+  camera: ^0.11.0+2
+  video_player: ^2.8.6
+  photo_view: ^0.14.0
+  
+  # Location & Maps
+  geolocator: ^12.0.0
+  geocoding: ^3.0.0
+  
+  # Communication
+  agora_rtc_engine: ^6.3.2
+  
+  # Storage & Preferences
   shared_preferences: ^2.2.2
-  # Add any other dependencies you used yesterday
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Utilities
+  json_annotation: ^4.9.0
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  url_launcher: ^6.2.6
+  permission_handler: ^11.3.1
+  
+  # Networking
+  dio: ^5.4.3+1
+  
+  # Push Notifications
+  flutter_local_notifications: ^17.2.1+2
+  
+  # Social Features
+  share_plus: ^7.2.2
+  path_provider: ^2.1.2
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.13.1
-  flutter_native_splash: ^2.3.10
   flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
+  
+  # Code Generation
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.9
+  json_serializable: ^6.7.1
 
 flutter:
   uses-material-design: true
-  # assets:
-  #   # - assets/images/
-  #   # - assets/icons/
-  # fonts:
-  #   - family: Poppins
-  #     fonts:
-  #       - asset: assets/fonts/Poppins-Regular.ttf
-  #       - asset: assets/fonts/Poppins-Bold.ttf
-  #         weight: 700
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
 
-flutter_icons:
-  android: true
-  ios: true
-  image_path: "assets/icon/app_icon.png"
 
-flutter_native_splash:
-  color: "#FF6F61"
-  image: "assets/icon/app_icon.png"
-  android: true
-  ios: true
-  web: true

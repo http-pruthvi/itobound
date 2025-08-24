@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SwipeableProfileCard extends StatefulWidget {
-  final List<String> imageUrls;
+  final List<String> photoUrls;
   final String name;
   final int age;
   final String bio;
@@ -11,7 +11,7 @@ class SwipeableProfileCard extends StatefulWidget {
 
   const SwipeableProfileCard({
     super.key,
-    required this.imageUrls,
+    required this.photoUrls,
     required this.name,
     required this.age,
     required this.bio,
@@ -84,14 +84,14 @@ class _SwipeableProfileCardState extends State<SwipeableProfileCard>
 
   void _nextImage() {
     setState(() {
-      _currentImage = (_currentImage + 1) % widget.imageUrls.length;
+      _currentImage = (_currentImage + 1) % widget.photoUrls.length;
     });
   }
 
   void _prevImage() {
     setState(() {
-      _currentImage = (_currentImage - 1 + widget.imageUrls.length) %
-          widget.imageUrls.length;
+      _currentImage = (_currentImage - 1 + widget.photoUrls.length) %
+          widget.photoUrls.length;
     });
   }
 
@@ -149,7 +149,7 @@ class _SwipeableProfileCardState extends State<SwipeableProfileCard>
                       AnimatedSwitcher(
                         duration: const Duration(milliseconds: 400),
                         child: Image.network(
-                          widget.imageUrls[_currentImage],
+                          widget.photoUrls[_currentImage],
                           key: ValueKey(_currentImage),
                           fit: BoxFit.cover,
                           width: 340,
@@ -241,7 +241,7 @@ class _SwipeableProfileCardState extends State<SwipeableProfileCard>
                         right: 0,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: List.generate(widget.imageUrls.length, (i) {
+                          children: List.generate(widget.photoUrls.length, (i) {
                             return AnimatedContainer(
                               duration: const Duration(milliseconds: 300),
                               margin: const EdgeInsets.symmetric(horizontal: 3),
@@ -293,7 +293,7 @@ class SwipeableProfileCardDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SwipeableProfileCard(
-      imageUrls: const [
+      photoUrls: const [
         'https://images.unsplash.com/photo-1517841905240-472988babdf9',
         'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91',
         'https://images.unsplash.com/photo-1465101046530-73398c7f28ca',

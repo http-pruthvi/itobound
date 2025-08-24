@@ -46,7 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '42049923887',
     projectId: 'dating-app-ab2d9',
     authDomain: 'dating-app-ab2d9.firebaseapp.com',
-    storageBucket: 'dating-app-ab2d9.appspot.com',
+    storageBucket: 'dating-app-ab2d9.firebasestorage.app',
     measurementId: 'G-M11HP82VYF',
   );
 
@@ -55,7 +55,7 @@ class DefaultFirebaseOptions {
     appId: '1:42049923887:android:85099ea2588d9decf5cfda',
     messagingSenderId: '42049923887',
     projectId: 'dating-app-ab2d9',
-    storageBucket: 'dating-app-ab2d9.appspot.com',
+    storageBucket: 'dating-app-ab2d9.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -63,9 +63,8 @@ class DefaultFirebaseOptions {
     appId: '1:42049923887:ios:6790ef3f850293d9f5cfda',
     messagingSenderId: '42049923887',
     projectId: 'dating-app-ab2d9',
-    storageBucket: 'dating-app-ab2d9.appspot.com',
-    iosClientId:
-        '42049923887-4deuo428vlo33ejn65rffeo8db62hq1i.apps.googleusercontent.com',
+    storageBucket: 'dating-app-ab2d9.firebasestorage.app',
+    iosClientId: '42049923887-4deuo428vlo33ejn65rffeo8db62hq1i.apps.googleusercontent.com',
     iosBundleId: 'com.example.itoBound',
   );
 
@@ -74,9 +73,8 @@ class DefaultFirebaseOptions {
     appId: '1:42049923887:ios:6790ef3f850293d9f5cfda',
     messagingSenderId: '42049923887',
     projectId: 'dating-app-ab2d9',
-    storageBucket: 'dating-app-ab2d9.appspot.com',
-    iosClientId:
-        '42049923887-4deuo428vlo33ejn65rffeo8db62hq1i.apps.googleusercontent.com',
+    storageBucket: 'dating-app-ab2d9.firebasestorage.app',
+    iosClientId: '42049923887-4deuo428vlo33ejn65rffeo8db62hq1i.apps.googleusercontent.com',
     iosBundleId: 'com.example.itoBound',
   );
 
@@ -86,7 +84,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '42049923887',
     projectId: 'dating-app-ab2d9',
     authDomain: 'dating-app-ab2d9.firebaseapp.com',
-    storageBucket: 'dating-app-ab2d9.appspot.com',
+    storageBucket: 'dating-app-ab2d9.firebasestorage.app',
     measurementId: 'G-EYXJFV66MS',
   );
+
 }
